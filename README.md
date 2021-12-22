@@ -48,4 +48,33 @@ https://docs.google.com/document/d/11HYAZT8zjCtWXJuzrMicIFx_-fSo9VtNpZ3cj4bz-Lg/
 (INSERT LINK FROM GITHUB PROJECTS)
 
 
+##Schema
+```
+User
+{
+    username: { type: String, required: true},
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true, select: false },
+  },
+  { timestamps: true }
+
+}
+
+Beverage
+{
+  {
+    title: { type: String, required: true },
+    style: { type: String, required: true },
+    armoa: { type: String, required: true },
+    description: { type: String, required: true },
+    abv: { type: String, required: true },
+    taste: { type: String, required: true },
+    website: { type: String, required: true },
+    imgURL: { type: String, required: true },
+    type: { type: String, required: true },
+  },
+  { timestamps: true }
+}```
+
+
 
