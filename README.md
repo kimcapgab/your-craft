@@ -29,8 +29,9 @@ https://www.figma.com/file/rWEO7xnxM16KNsIp9iTdzw/Jigify-your-Craft?node-id=0%3A
 
 ## COMPONENT HIRARCHY
 
+<img width="1045" alt="Screen Shot 2021-12-22 at 10 48 16 AM" src="https://user-images.githubusercontent.com/92862291/147119905-fcfe3804-aa2a-4c4b-9b04-b6ac7f32a164.png">
 
-(ADD PICTURE HERE)
+<img width="786" alt="Screen Shot 2021-12-22 at 10 54 47 AM" src="https://user-images.githubusercontent.com/92862291/147119927-b0724f5a-2367-447d-a51e-4fcbf9528cdb.png">
 
 https://whimsical.com/yourcraft-GVhPEEF314RcfjdXyEmte9https://whimsical.com/yourcraft-GVhPEEF314RcfjdXyEmte9
 
