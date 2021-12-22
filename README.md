@@ -48,7 +48,7 @@ https://docs.google.com/document/d/11HYAZT8zjCtWXJuzrMicIFx_-fSo9VtNpZ3cj4bz-Lg/
 (INSERT LINK FROM GITHUB PROJECTS)
 
 
-##Schema
+## Schema
 ```
 User
 {
