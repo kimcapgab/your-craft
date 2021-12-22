@@ -12,7 +12,7 @@ mongoose.set("returnOriginal", false)
 
 mongoose
   .connect(MONGODB_URI)
-  .catch((error) => console.error("error connecting to mongodb"), error.message)
+  .catch((error) => console.error("error connecting to mongodb", error.message))
 
 //listen to mongodb events
 mongoose.connection.on("disconnected", () => console.log("disconnected from mongodb"))
