@@ -1,5 +1,6 @@
 import db from '../db/connection.js'
 import User from '../models/user.js'
+import Bev from "../models/bev.js"
 import bcrypt from 'bcrypt'
 
 const insertData = async () => {
@@ -34,6 +35,72 @@ const insertData = async () => {
     password_digest: await bcrypt.hash('L0v32!p4int', 11)
   })
   await user4.save()
+
+  // Bev data that we are going to insert into database 
+
+  const bevs = [
+    
+      {
+        title: "Beverage 1",
+        style: "Test style",
+        aroma: "good",
+        description: "testing description blah",
+        abv: "6%",
+        taste: "yum",
+        website: "www.testing.com",
+        imgURL: "img.test/bev.com",
+        type: "Beer",
+    },
+    {
+      title: "Beverage 2",
+      style: "Test style",
+      aroma: "good",
+      description: "testing description blah",
+      abv: "4%",
+      taste: "yum",
+      website: "www.testing.com",
+      imgURL: "img.test/bev.com",
+      type: "Wine",
+    },
+    {
+      title: "Beverage 3",
+      style: "Test style",
+      aroma: "good",
+      description: "testing description blah",
+      abv: "7%",
+      taste: "yum",
+      website: "www.testing.com",
+      imgURL: "img.test/bev.com",
+      type: "Liquor",
+    },
+    {
+      title: "Beverage 4",
+      style: "Test style",
+      aroma: "good",
+      description: "testing description blah",
+      abv: "6%",
+      taste: "yum",
+      website: "www.testing.com",
+      imgURL: "img.test/bev.com",
+      type: "Beer",
+    },
+    {
+      title: "Beverage 5",
+      style: "Test style",
+      aroma: "good",
+      description: "testing description blah",
+      abv: "6%",
+      taste: "yum",
+      website: "www.testing.com",
+      imgURL: "img.test/bev.com",
+      type: "Wine",
+    },
+    
+  ]
+
+  //This inserts the bevs into database
+  await Bev.insertMany(bevs)
+  console.log('Created users & bevs!')
 
   db.close()
 }
