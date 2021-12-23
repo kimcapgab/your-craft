@@ -36,3 +36,29 @@ export const createBev = async (req, res) => {
     res.status(500).json({ error: error.message })
   }
 }
+
+
+export const updateBev = async (req, res) => {
+  try {
+    const { _id } = req.params
+    const bev = await Bev.findByIdAndUpdate( _id, req.body, { new: true })
+    res.status(200).json(bev)
+  } catch (error) {
+    console.log(error.message)
+    res.status(500).json({ error: error.message })
+  }
+}
+
+
+export const deleteBev = async (req, res) => {
+  try {
+    const { _id } = req.params
+    const deleted = await Bev.findByIdAndDelete(_id)
+    if (deleted) {
+      return res.status(200).send("Beverage Deleted")
+    }
+  } catch (error) {
+    console.log(error.message)
+    res.status(500).json({ error: error.message })
+  }
+}

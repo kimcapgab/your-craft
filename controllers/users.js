@@ -48,7 +48,7 @@ export const signUp = async (req, res) => {
 export const signIn = async (req, res) => {
   try {
     const { email, password } = req.body
-    
+
     const user = await User.findOne({ email: email }).select(
       'username email password_digest'
     )
@@ -67,6 +67,20 @@ export const signIn = async (req, res) => {
   } catch (error) {
     console.log(error.message)
     res.status(500).json({error: error.message})
+  }
+}
+
+
+export const verify = async (req, res) => {
+  try {
+    const token = req.headers.authorization.split(' ')[1]
+    const payload = jwt.verify(token, TOKEN_KEY)
+    if (payload) {
+      res.json(payload)
+    }
+  } catch (error){
+    console.log(error.message)
+    res.status(401).send("Not Authorized")
   }
 }
 
