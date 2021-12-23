@@ -1,0 +1,26 @@
+footer{
+  background-image: url('https://image.shutterstock.com/image-photo/old-grunge-dark-textured-wooden-260nw-718395823.jpg');
+  background-size: cover;
+}
+
+#left-container{
+width: 50%;
+display: flex;
+justify-content: flex-start;
+flex-flow: cloumn;
+}
+
+.left-container-links{
+
+}
+
+#right-container{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: cloumn;
+}
+
+.right-container-links{
+
+}
