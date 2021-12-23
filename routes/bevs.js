@@ -7,11 +7,8 @@ const router = Router()
 router.get('/bevs', controllers.getBevs)
 router.get('/bevs/:_id', controllers.getBev)
 router.post('/create', restrict, controllers.createBev)
-
-
-
-
-
+router.put('/edit/:_id', restrict, controllers.updateBev)
+router.delete('/edit/:_id', restrict, controllers.deleteBev)
 
 
 export default router
