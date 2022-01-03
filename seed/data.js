@@ -49,7 +49,7 @@ const insertData = async () => {
         taste: "yum",
         website: "www.testing.com",
         imgURL: "img.test/bev.com",
-        type: "Beer",
+        type: "beer",
     },
     {
       title: "Beverage 2",
@@ -60,7 +60,7 @@ const insertData = async () => {
       taste: "yum",
       website: "www.testing.com",
       imgURL: "img.test/bev.com",
-      type: "Wine",
+      type: "wine",
     },
     {
       title: "Beverage 3",
@@ -71,7 +71,7 @@ const insertData = async () => {
       taste: "yum",
       website: "www.testing.com",
       imgURL: "img.test/bev.com",
-      type: "Liquor",
+      type: "liquor",
     },
     {
       title: "Beverage 4",
@@ -82,7 +82,7 @@ const insertData = async () => {
       taste: "yum",
       website: "www.testing.com",
       imgURL: "img.test/bev.com",
-      type: "Beer",
+      type: "beer",
     },
     {
       title: "Beverage 5",
@@ -93,7 +93,7 @@ const insertData = async () => {
       taste: "yum",
       website: "www.testing.com",
       imgURL: "img.test/bev.com",
-      type: "Wine",
+      type: "wine",
     },
     
   ]

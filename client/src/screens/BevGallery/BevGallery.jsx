@@ -4,7 +4,7 @@ import { getBevs } from "../../services/bevApi";
 import BevPreview from "../../components/BevPreview/BevPreview";
 import Nav from "../../components/Nav/Nav";
 import { useParams } from "react-router-dom";
-import Layout from "../../components/Layout/Layout"
+
 
 export default function BevGallery() {
   const [bevs, setBevs] = useState([]);
@@ -27,7 +27,7 @@ export default function BevGallery() {
   }, [params.type]);
 
   return (
-    <Layout>
+    <>
       <Nav />
       <div className="bevContainer">
         <div className="bevCard">
@@ -55,7 +55,6 @@ export default function BevGallery() {
           +
         </div>
       </div>
-    
-  </Layout>
+      </>
   );
 }
