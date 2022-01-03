@@ -21,10 +21,10 @@ export default function BevGallery() {
 
   useEffect(() => {
     const foundType = bevs.filter((bev) => {
-      return bev.type === params.type;
+      return bev.type === params.typeOf;
     });
     setResults(foundType);
-  }, [params.type]);
+  }, [params.typeOf]);
 
   return (
     <>
@@ -42,7 +42,7 @@ export default function BevGallery() {
                 />
               
             ))}
-          {params.type === "all" &&
+          {params.typeOf === "all" &&
             bevs.map((bev) => (
               
                 <BevPreview
