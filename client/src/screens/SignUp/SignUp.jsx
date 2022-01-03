@@ -33,7 +33,7 @@ export default function SignUp(props) {
   }
   const renderError = () => {
     const toggleForm = isError ? "Error" : ""
-    if (isError) {
+    if (isError === true) {
       return (
         <button type="submit" className={toggleForm}>{errorMsg}</button>
       )
