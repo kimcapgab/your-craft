@@ -16,22 +16,24 @@ function App() {
 
   const [user, setUser] = useState(null)
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      const user = await verifyUser()
-      user ? setUser(user) : setUser(null)
-    }
-    fetchUser()
-  }, [])
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     const user = await verifyUser()
+  //     user ? setUser(user) : setUser(null)
+  //   }
+  //   fetchUser()
+  // }, [])
   
 
   return (
     <div className="App">
       <Routes>
         <Route path='/' element={<Home user={user}/>} />
-        <Route path="/create"
+        {/* <Route path="/create"
           element={user ? <CreateForm user={user} />
-            : <Navigate to="/bevs/all" />} />
+            : <Navigate to="/bevs/all" />} /> */}
+        <Route path="/create"
+          element={<CreateForm user={user}/> }/>
         <Route path='/sign-up' element={<SignUp user={user}/>} />
         <Route path='/sign-in' element={<SignIn user={user} />} />
         <Route path='/edit/:id' element={<EditForm user={user} />} />
