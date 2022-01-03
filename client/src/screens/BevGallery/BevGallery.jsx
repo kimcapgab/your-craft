@@ -16,7 +16,8 @@ export default function BevGallery() {
 
   return (
     // <Layout>
-      <div className='bevContainer'>
+    <div className='bevContainer'>
+        <h1>Testing Gallery </h1>
         {
         bevs.map((bev) => (
           <h1>{bev.title}</h1>

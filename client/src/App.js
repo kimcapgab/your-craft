@@ -36,7 +36,7 @@ function App() {
         <Route path='/sign-in' element={<SignIn user={user} />} />
         <Route path='/edit/:id' element={<EditForm user={user} />} />
         <Route path='/bevs/:id' element={<BevID user={user} />} />
-        <Route path='/bevs/:type' element={<BevGallery user={user} />} />
+        <Route path='/bevs' element={<BevGallery user={user} />} />
       </Routes>
       
     
