@@ -3,9 +3,9 @@ import Home from './screens/Home/Home'
 import SignUp from './screens/SignUp/SignUp'
 import SignIn from './screens/SignIn/SignIn'
 import EditForm from './screens/EditForm/EditForm'
-import BevGallery from './screens/BevGallery'
-import BevID from './screens/BevID'
-import CreateForm from './screens/CreateForm'
+import BevGallery from './screens/BevGallery/BevGallery'
+import BevID from './screens/BevID/BevID'
+import CreateForm from './screens/CreateForm/CreateForm'
 import { useEffect, useState } from 'react';
 import {verifyUser} from './services/userApi'
 import { Routes, Route , Navigate} from 'react-router-dom';
@@ -38,6 +38,7 @@ function App() {
         <Route path='/bevs/:id' element={<BevID user={user} />} />
         <Route path='/bevs/:type' element={<BevGallery user={user} />} />
       </Routes>
+      
     
     </div>
   );
