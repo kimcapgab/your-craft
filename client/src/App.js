@@ -16,13 +16,13 @@ function App() {
 
   const [user, setUser] = useState(null)
 
-  // useEffect(() => {
-  //   const fetchUser = async () => {
-  //     const user = await verifyUser()
-  //     user ? setUser(user) : setUser(null)
-  //   }
-  //   fetchUser()
-  // }, [])
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser()
+      user ? setUser(user) : setUser(null)
+    }
+    fetchUser()
+  }, [])
   
 
   return (
@@ -34,7 +34,7 @@ function App() {
             : <Navigate to="/bevs/all" />} /> */}
         <Route path="/create"
           element={<CreateForm user={user}/> }/>
-        <Route path='/sign-up' element={<SignUp user={user}/>} />
+        <Route path='/sign-up' element={<SignUp user={user} setUser={setUser}/>} />
         <Route path='/sign-in' element={<SignIn user={user} />} />
         <Route path='/edit/:id' element={<EditForm user={user} />} />
         <Route path='/bev/:id' element={<BevID user={user} />} />
