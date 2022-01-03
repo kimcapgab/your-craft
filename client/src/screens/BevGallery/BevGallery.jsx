@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./BevGallery.css";
 import { getBevs } from "../../services/bevApi";
+import BevPreview from "../../components/BevPreview/BevPreview";
 import Nav from "../../components/Nav/Nav";
 import { useParams } from "react-router-dom";
 
@@ -8,7 +9,6 @@ import { useParams } from "react-router-dom";
 
 export default function BevGallery() {
   const [bevs, setBevs] = useState([]);
-  const [filter, setFilter] = useState('all')
   const [results, setResults] = useState(null)
   const params = useParams()
   
