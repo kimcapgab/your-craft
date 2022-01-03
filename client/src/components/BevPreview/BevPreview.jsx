@@ -6,7 +6,7 @@ const BevPreview = (props) => {
         <div >
             <Link  to={`/bevs/${props._id}`}>
                 <img  src={props.imgURL} alt={props.name} />
-                <div>View</div>
+              
             </Link>
         </div>
     )

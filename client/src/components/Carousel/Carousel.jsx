@@ -7,7 +7,7 @@ export default function Carosel ({bevs}) {
   const newest = bevs
     .reverse()
     .map((bev, index) =>
-      index < 2 ? (
+      index < 3 ? (
         <BevPreview
           _id={bev._id}
           name={bev.name}
