@@ -38,6 +38,7 @@ function App() {
         <Route path='/bevs/:id' element={<BevID user={user} />} />
         <Route path='/bevs/:type' element={<BevGallery user={user} />} />
       </Routes>
+      
     
     </div>
   );
