@@ -1,3 +1,16 @@
 header{
   background-color: #3E5C76;
+  display: flex;
+  justify-content: center;
 }
+
+
+#icon-container{
+  width:40%;
+}
+
+#logo{
+  background-image: url('');
+}
+
+
