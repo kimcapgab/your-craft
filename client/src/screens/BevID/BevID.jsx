@@ -33,9 +33,9 @@ export default function BevID({user}) {
         <p>{abv}</p>
         <p>{website}</p>
       </div>
-      <button onClick={(e)=>{nav(`/bevs/all`)}}>Back</button>
+      <button onClick={()=>{nav(`/bevs/all`)}}>Back</button>
       {
-        user && <button onClick={(e)=>{nav(`/edit/${id}`)}}>Edit</button>
+        user && <button onClick={()=>{nav(`/edit/${id}`)}}>Edit</button>
       }
 
       
