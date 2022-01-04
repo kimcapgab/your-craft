@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import { signIn } from '../../services/userApi'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import {checkSpCharacters} from '../../utility/checker'
 
 export default function SignIn(props) {
 
@@ -21,28 +22,48 @@ export default function SignIn(props) {
 
   })
   }
+  
   const onSignIn = async (e) => {
     e.preventDefault()
     const { setUser } = props
-    try {
-      const user = await signIn(form)
-      setUser(user)
-      navigate('/')
-    } catch(error) {
-      console.log(error)
+    if (checkSpCharacters(form.email)) {
       setForm({
         isError: true,
-        errorMsg: 'invalid credentials',
+        errorMsg: 'Email contains unapproved special characters',
         email: '',
         password: '',
       })
+    } else if (checkSpCharacters(form.password)) {
+      setForm({
+        isError: true,
+        errorMsg: 'Password contains unapproved special characters',
+        email: '',
+        password: '',
+      })
+    } else {
+      try {
+        const user = await signIn(form)
+        setUser(user)
+        navigate('/')
+      } catch (error) {
+        console.log(error)
+        setForm({
+          isError: true,
+          errorMsg: 'invalid credentials',
+          email: '',
+          password: '',
+        })
+      }
     }
   }
   const renderError = () => {
     const toggleForm = form.isError ? 'DANGER' : ''
     if (form.isError) {
       return (
-        <button type='submit' className={toggleForm}>{form.errorMsg}</button>
+        <>
+          <h3>{form.errorMsg}</h3>
+          <button type='submit' className={toggleForm}>Try Again</button>
+          </>
       )
     } else {
       return <button type='submit'> SIGN IN! </button>

@@ -82,7 +82,7 @@ export default function CreateForm({setToggle}) {
           onChange={handleChange}
         />
         <input
-          placeholder='ImgURL'
+          placeholder='URL for Image (preferrably with a transparent background)'
           value={bev.imgURL}
           name='imgURL'
           onChange={handleChange}
