@@ -6,7 +6,7 @@ import Nav from "../../components/Nav/Nav";
 import { useParams } from "react-router-dom";
 
 
-export default function BevGallery() {
+export default function BevGallery({toggle}) {
   const [bevs, setBevs] = useState([]);
   const [results, setResults] = useState(null);
   const params = useParams();
@@ -17,7 +17,7 @@ export default function BevGallery() {
       setBevs(allBevs);
     };
     fetchAllBevs();
-  }, []);
+  }, [toggle]);
 
   useEffect(() => {
     const foundType = bevs.filter((bev) => {

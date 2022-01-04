@@ -39,7 +39,7 @@ function App() {
         <Route path='/sign-in' element={<SignIn user={user} setUser={setUser} />} />
         <Route path='/edit/:id' element={<EditForm user={user} setToggle={setToggle}/>} />
         <Route path='/bev/:id' element={<BevID user={user} />} />
-        <Route path='/bevs/:typeOf' element={<BevGallery user={user} />} />
+          <Route path='/bevs/:typeOf' element={<BevGallery user={user} toggle={toggle} />} />
       </Routes>
       </Layout>
     
