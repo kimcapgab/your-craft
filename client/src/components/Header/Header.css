@@ -2,12 +2,20 @@ header {
   background-color: #3e5c76;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border: solid 3px orange;
 }
 
-#icon-container {
-  width: 40%;
+#logo-container {
+  display: flex;
+  border: 3px solid red;
+  /* flex-flow: ; */
 }
 
 #logo {
+  
   background-image: url("");
+  border: 3px blue solid;
+  height: 100%;
+  width: 30%;
 }
