@@ -1,5 +1,7 @@
 import React from 'react'
-import {useState} from 'react'
+import { useState } from 'react'
+import { createBev } from '../../services/bevApi'
+import { useNavigate } from 'react-router-dom'
 
 export default function CreateForm() {
 
@@ -15,6 +17,8 @@ export default function CreateForm() {
     type: '',
   })
 
+  const nav = useNavigate()
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setBev({
@@ -23,11 +27,16 @@ export default function CreateForm() {
     })
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    await createBev(bev)
+    nav(`/`)
+  }
 
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
       <input
           placeholder='Title'
           value={bev.title}
