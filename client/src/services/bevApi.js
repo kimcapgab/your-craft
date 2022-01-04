@@ -38,7 +38,7 @@ export const updateBev = async (id, bev) => {
 }
 
 
-export const deleteProduct = async (id) => {
+export const deleteBev = async (id) => {
   try {
     const res = await api.delete(`/edit/${id}`)
     return res.data

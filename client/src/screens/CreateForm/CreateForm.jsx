@@ -11,7 +11,7 @@ export default function CreateForm() {
     description: '',
     aroma: '',
     taste: '',
-    ABV: '',
+    abv: '',
     website: '',
     imgURL: '',
     type: '',
@@ -68,9 +68,10 @@ export default function CreateForm() {
           onChange={handleChange}
         />
         <input
+          type="number"
           placeholder='ABV'
-          value={bev.ABV}
-          name='ABV'
+          value={bev.abv}
+          name='abv'
           onChange={handleChange}
         />
         <input
@@ -92,6 +93,7 @@ export default function CreateForm() {
           <option value="wine">Wine</option>
           <option value="liquor">Liquor</option>
         </select>
+        <button onClick={handleSubmit}>Submit</button>
       </form>
     </div>
   )
