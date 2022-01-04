@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { getBev, updateBev, deleteBev } from '../../services/bevApi'
 import {useParams, useNavigate} from 'react-router-dom'
 
-export default function EditForm() {
+export default function EditForm({setToggle}) {
   
   const [bev, setBev] = useState({
     title: '',
@@ -42,6 +42,7 @@ export default function EditForm() {
 
   const handleDelete = () => {
     deleteBev(id);
+    setToggle(e=>!e)
     navigate('/bevs/all')
 }
 

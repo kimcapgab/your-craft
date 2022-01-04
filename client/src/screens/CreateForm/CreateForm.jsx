@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { createBev } from '../../services/bevApi'
 import { useNavigate } from 'react-router-dom'
 
-export default function CreateForm() {
+export default function CreateForm({setToggle}) {
 
   const [bev, setBev] = useState({
     title: '',
@@ -30,6 +30,7 @@ export default function CreateForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await createBev(bev)
+    setToggle(e=>!e)
     nav(`/`)
   }
 

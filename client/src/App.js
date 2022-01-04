@@ -16,6 +16,7 @@ import Layout from './components/Layout/Layout'
 function App() {
 
   const [user, setUser] = useState(null)
+  const [toggle, setToggle] = useState(false)
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -30,15 +31,13 @@ function App() {
     <div className="App">
       <Layout user={user} setUser={setUser}>
       <Routes>
-        <Route path='/' element={<Home user={user}/>} />
-        {/* <Route path="/create"
-          element={user ? <CreateForm user={user} />
-            : <Navigate to="/bevs/all" />} /> */}
+          <Route path='/' element={<Home user={user} setUser={setUser} toggle={toggle} setToggle={setToggle}/>} />
         <Route path="/create"
-          element={<CreateForm user={user}/> }/>
+          element={user ? <CreateForm user={user} setToggle={setToggle}/>
+            : <Navigate to="/bevs/all" />} />
         <Route path='/sign-up' element={<SignUp user={user} setUser={setUser}/>} />
         <Route path='/sign-in' element={<SignIn user={user} setUser={setUser} />} />
-        <Route path='/edit/:id' element={<EditForm user={user} />} />
+        <Route path='/edit/:id' element={<EditForm user={user} setToggle={setToggle}/>} />
         <Route path='/bev/:id' element={<BevID user={user} />} />
         <Route path='/bevs/:typeOf' element={<BevGallery user={user} />} />
       </Routes>
