@@ -1,10 +1,12 @@
-import Carosel from "../../components/Carousel/Carousel"
 import { useState, useEffect } from "react"
 import { getBevs } from '../../services/bevApi'
+import Nav from '../../components/Nav/Nav'
+import HomeApiLinks from "../../components/HomeApiLinks/HomeApiLinks"
 
 
-export default function Home() {
+export default function Home({user, setUser, toggle, }) {
   const [bevs, setBevs] = useState([])
+
 
   useEffect(() => {
     const fetchBevs = async () => {
@@ -12,13 +14,14 @@ export default function Home() {
       setBevs(allBevs)
     }
     fetchBevs()
-  }, [])
+  }, [toggle])
 
 
 
   return (
     <div>
-      <Carosel bevs={bevs}/>
+      <Nav />
+      <HomeApiLinks bevs={bevs} user={user} setUser={setUser} />
       </div>
   )
 }
