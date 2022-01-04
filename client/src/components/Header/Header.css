@@ -1,16 +1,13 @@
-header{
-  background-color: #3E5C76;
+header {
+  background-color: #3e5c76;
   display: flex;
   justify-content: center;
 }
 
-
-#icon-container{
-  width:40%;
+#icon-container {
+  width: 40%;
 }
 
-#logo{
-  background-image: url('');
+#logo {
+  background-image: url("");
 }
-
-

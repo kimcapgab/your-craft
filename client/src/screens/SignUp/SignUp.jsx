@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import { signUp } from '../../services/userApi'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { checkSpCharacters } from '../../utility/checker'
+import {checkMatch} from '../../utility/checker'
 
-export default function SignUp(props) {
+export default function SignUp({ setUser }) {
 
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
@@ -13,35 +15,54 @@ export default function SignUp(props) {
   const [errorMsg, setErrorMsg] = useState('')
   const navigate = useNavigate()
 
-  const onSignUp = async (event) => {
-    event.preventDefault()
-    const { setUser } = props
-    const newUser = {
-      username,
-      email,
-      password,
-    }
-    try {
-      const user = await signUp(newUser)
-      setUser(user)
-      navigate('/')
-    } catch (error) {
+  const onSignUp = async (e) => {
+    e.preventDefault()
+    if (checkMatch(password, confirmPassword)) {
+      
+      if (checkSpCharacters(username)) {
+        setIsError(true)
+        setErrorMsg('Username contains unapproved special characters')
+      } else if (checkSpCharacters(email)) {
+        setIsError(true)
+        setErrorMsg('Email contains unapproved special characters')
+      } else if (checkSpCharacters(password)) {
+        setIsError(true)
+        setErrorMsg('Password contains unapproved special characters')
+      } else {
+    
+        const newUser = {
+          username,
+          email,
+          password,
+        }
+        try {
+          const user = await signUp(newUser)
+          setUser(user)
+          navigate('/')
+        } catch (error) {
+          setIsError(true)
+          setErrorMsg('Sign Up Details Invalid')
+          console.log(error)
+        }
+      }
+    } else {
       setIsError(true)
-      setErrorMsg('Sign Up Details Invalid')
-      console.log(error)
+      setErrorMsg('Passwords must Match')
     }
+    
   }
-  const renderError = () => {
+  function renderError ()  {
     const toggleForm = isError ? "Error" : ""
     if (isError === true) {
-      return (
-        <button type="submit" className={toggleForm}>{errorMsg}</button>
+      return (<>
+        <h2>{errorMsg}</h2>
+        <button type="submit">Try Again</button>
+      </>
       )
     } else {
       return <button type="submit">Sign Up</button>
     }
   }
-
   return (
     <div>
       <div>
