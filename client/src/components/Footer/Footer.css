@@ -1,41 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&display=swap");
 
-footer{
-  background-image: url('https://blessedbythelord.org/wp-content/uploads/2021/07/0e3863867_1416877594_wooden-header.jpg');
-  height: 200px;
+footer {
+  background-image: url("https://blessedbythelord.org/wp-content/uploads/2021/07/0e3863867_1416877594_wooden-header.jpg");
+  height: 30vh;
   display: flex;
   flex-flow: row;
   justify-content: center;
 
-font-size: 24px;
-font-family: 'Fredericka the Great';
+  font-size: 24px;
+  font-family: "Fredericka the Great";
 }
 
-#left-container{
-width: 80%;
-height: 100%;
-display: flex;
-justify-content: flex-start;
-flex-flow: column;
+#left-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5vw;
 }
 
-.left-container-links{
-margin-top: 2%;
-text-decoration: none;
-color: white;
+.left-container-links {
+  margin-top: 2%;
+  text-decoration: none;
+  color: white;
 }
 
-#right-container{
-  width: 10%;
+#right-container {
+  width: 20%;
   height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
+  margin-right: 5vw;
 }
 
-.right-container-links{
-text-decoration: none;
-color: white;
-margin-top: 30%;
-margin-bottom: 10%;
+.right-container-links {
+  text-decoration: none;
+  color: white;
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+.footer-left-right,
+.footer-right-right {
+  display: flex;
+  flex-direction: column;
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right-left {
+  text-align: center;
+}
+.footer-right-right {
+  width: 15vw;
 }
