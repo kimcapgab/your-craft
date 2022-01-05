@@ -1,0 +1,35 @@
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0ebd8;
+  margin-top: -10vh;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+}
+.sign-in-form > input {
+  background-color: grey;
+  padding: 4%;
+}
+.buttonRg {
+  background: none;
+  border: none;
+  font-family: "Fredericka the Great";
+  color: #f0ebd8;
+  font-size: 2em;
+  margin-top: 15%;
+}
+
+.sign-in-form > * {
+  margin: 5%;
+}
+
+.welcome-back {
+  font-family: "Fredericka the Great";
+  color: #f0ebd8;
+  font-size: 3em;
+  font-weight: 200;
+}
