@@ -3,7 +3,8 @@ import { useState } from 'react'
 import { signUp } from '../../services/userApi'
 import { useNavigate } from 'react-router-dom'
 import { checkSpCharacters } from '../../utility/checker'
-import {checkMatch} from '../../utility/checker'
+import { checkMatch } from '../../utility/checker'
+import './SignUp.css'
 
 export default function SignUp({ setUser }) {
 
@@ -52,29 +53,34 @@ export default function SignUp({ setUser }) {
     
   }
   function renderError ()  {
-    const toggleForm = isError ? "Error" : ""
+
     if (isError === true) {
       return (<>
         <h2>{errorMsg}</h2>
-        <button type="submit">Try Again</button>
+        <button className='buttonR' onSubmit={onSignUp} type="submit">Try Again</button>
       </>
       )
     } else {
-      return <button type="submit">Sign Up</button>
+      return <button className='buttonR' onSubmit={onSignUp} type="submit">Sign Up</button>
     }
   }
   return (
-    <div>
-      <div>
-        <h2>Sign Up Here!</h2>
-      </div>
-      <form onSubmit={onSignUp}>
-        <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <input type="password" placeholder="Confirm Password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
-      {renderError()}
+    <div className='sign-up'>
+    
+      <form className='formR' >
+        <p>Username</p>
+        <input type="text"  value={username} onChange={(e) => setUsername(e.target.value)} />
+        <p>Email</p>
+        <input type="email"  value={email} onChange={(e) => setEmail(e.target.value)} />
+        <p>Password</p>
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <p>Confirm Password</p>
+        <input type="password"  value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+        
       </form>
+      <div className='error-buttons'>
+          {renderError()}
+        </div>
     </div>
   )
 }

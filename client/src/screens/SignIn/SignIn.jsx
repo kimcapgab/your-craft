@@ -2,14 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import { signIn } from '../../services/userApi'
 import { useNavigate } from 'react-router-dom'
-import {checkSpCharacters} from '../../utility/checker'
+import { checkSpCharacters } from '../../utility/checker'
+import './SignIn.css'
 
 export default function SignIn(props) {
 
   const navigate = useNavigate()
 
   const [form, setForm] = useState({
-    email: '',
+    username: '',
     password: '',
     isError: false,
     errorMsg: '',
@@ -26,18 +27,18 @@ export default function SignIn(props) {
   const onSignIn = async (e) => {
     e.preventDefault()
     const { setUser } = props
-    if (checkSpCharacters(form.email)) {
+    if (checkSpCharacters(form.username)) {
       setForm({
         isError: true,
-        errorMsg: 'Email contains unapproved special characters',
-        email: '',
+        errorMsg: 'Username contains unapproved special characters',
+        username: '',
         password: '',
       })
     } else if (checkSpCharacters(form.password)) {
       setForm({
         isError: true,
         errorMsg: 'Password contains unapproved special characters',
-        email: '',
+        username: '',
         password: '',
       })
     } else {
@@ -62,23 +63,25 @@ export default function SignIn(props) {
       return (
         <>
           <h3>{form.errorMsg}</h3>
-          <button type='submit' className={toggleForm}>Try Again</button>
+          <button className='buttonRg' type='submit' className={toggleForm}>Let's Try That Again</button>
           </>
       )
     } else {
-      return <button type='submit'> SIGN IN! </button>
+      return <button className='buttonRg' type='submit'>SIGN IN</button>
     }
   }
 
 
   return (
-    <div>
+    <div className='sign-in'>
       <div>
-        <h1>Sign In!</h1>
+        <h1 className='welcome-back'>Welcome Back</h1>
       </div>
-      <form onSubmit={onSignIn}>
-        <input name='email' type="email" placeholder="email" value={form.email} onChange={handleChange} />
-        <input name='password' type="password" placeholder="password" value={form.password} onChange={handleChange} />
+      <form className='sign-in-form' onSubmit={onSignIn}>
+        <p>Username</p>
+        <input name='username' type="text" value={form.username} onChange={handleChange} />
+        <p>Password</p>
+        <input name='password' type="password"  value={form.password} onChange={handleChange} />
         {renderError()}
       </form>
     </div>
