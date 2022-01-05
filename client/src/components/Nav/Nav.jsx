@@ -9,10 +9,12 @@ const Nav = () => {
     <nav>
       <div className='left-side-conatiner'></div>
       <div className='right-side-container'>
-        <Link to='/bevs/all' id='allBevs'>All</Link>
-        <Link to='/bevs/beer' id='allBeer'>Beer</Link>
-        <Link to='/bevs/wine' id='allWine'>Wine</Link>
-        <Link to='/bevs/liquor' id='allBevs'>Liquor</Link>
+        <button to='/bevs/all' id='allBevs'>All</button>
+        <div className='inner-button-container-7'>
+          <button to='/bevs/beer' id='allBeer'>Beer</button>
+          <button to='/bevs/wine' id='allWine'>Wine</button>
+          <button to='/bevs/liquor' id='allBevs'>Liquor</button>
+        </div>
       </div>
       </nav>
   )

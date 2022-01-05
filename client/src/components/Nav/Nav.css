@@ -1,11 +1,15 @@
-.left-container{
-  width:50%;
+.left-container {
+  width: 50%;
   display: flex;
   flex-flow: flex-start;
 }
 
-.right-container{
-  width:50%;
+.right-container {
+  width: 50%;
   display: flex;
   flex-flow: flex-end;
+}
+
+#allBeer {
+  padding-left: 50%;
 }
