@@ -10,6 +10,7 @@
 .layout-children {
   flex: 2;
   padding: 100px;
+  padding-top: 30px;
   background-color: #1d2d44;
 }
 h1,
