@@ -1,17 +1,22 @@
-h1 {
+.non-user-intro-7 {
   margin-top: 5%;
 }
 
-h2 {
+.non-user-action-7 {
   font-family: "El Messiri", sans-serif;
   font-size: 30px;
   margin-bottom: 5%;
 }
 
+.vl {
+  width: 8vh;
+}
+
 .center-buttons-7 {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 10%;
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 #create-a-bev,
