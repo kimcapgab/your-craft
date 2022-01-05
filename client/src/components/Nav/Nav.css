@@ -10,6 +10,11 @@
   flex-flow: flex-end;
 }
 
-#allBeer {
-  padding-left: 50%;
+.inner-button-container-7 > a {
+  margin-left: 5%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2em;
 }
