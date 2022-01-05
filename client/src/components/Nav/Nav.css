@@ -14,7 +14,10 @@
   margin-left: 5%;
 }
 
-a {
+#allBeer,
+#allWine,
+#allBevs {
   text-decoration: none;
   font-size: 2em;
+  color: #f0ebd8;
 }
