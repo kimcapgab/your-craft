@@ -18,7 +18,7 @@ export default function Carosel ({bevs}) {
   
   return (
     <div >
-      <div>LATEST</div>
+      <h1>Latest</h1>
       <div>{newest}</div>
     </div>
   )

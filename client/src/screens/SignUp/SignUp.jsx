@@ -57,11 +57,11 @@ export default function SignUp({ setUser }) {
     if (isError === true) {
       return (<>
         <h2>{errorMsg}</h2>
-        <button className='buttonR' onSubmit={onSignUp} type="submit">Try Again</button>
+        <button className='buttonR' onClick={onSignUp} type="submit">Try Again</button>
       </>
       )
     } else {
-      return <button className='buttonR' onSubmit={onSignUp} type="submit">Sign Up</button>
+      return <button className='buttonR' onClick={onSignUp} type="submit">Sign Up</button>
     }
   }
   return (

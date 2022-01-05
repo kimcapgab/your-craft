@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap");
+
 .layout {
   height: 100vh;
   display: flex;
@@ -8,6 +11,27 @@
   flex: 2;
   padding: 100px;
   background-color: #1d2d44;
+}
+h1,
+h2,
+h3,
+a {
+  font-family: "Fredericka the Great";
+  color: #f0ebd8;
+  font-weight: 200;
+}
+* {
+  font-family: "El Messiri", sans-serif;
+}
+img {
+  width: 10vw;
+}
+button {
+  background: none;
+  border: none;
+  font-family: "Fredericka the Great";
+  color: #f0ebd8;
+  font-size: 2em;
 }
 
 @media (max-width: 500px) {
