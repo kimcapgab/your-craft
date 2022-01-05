@@ -1,0 +1,29 @@
+#create-form{
+border: solid 3px blue;
+display: flex;
+width: 90%;
+height: 40vh;
+}
+
+#left-container-create-form{
+  border: solid 3px lightgreen;
+  flex-basis: 40vw;
+  height: 20vh;
+}
+
+#bev-card-container{
+  margin-left: 10%;
+  flex-basis: 40vw;
+  display: flex;
+  flex-flow: column;
+  background-color: #0D1321;
+  border: solid 3px red;
+}
+
+.bev-card-item{
+  border: solid 3px lightblue;
+  flex-basis: 40vw;
+  height: 20%;
+  fill: none;
+  background: transparent;
+}
