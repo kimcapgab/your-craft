@@ -1,0 +1,16 @@
+.carousel-img {
+  height: 40vh;
+  width: 15vw;
+  margin-left: 41%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.latest {
+  text-align: center;
+}
+.carousel-control-prev {
+  margin-left: 30%;
+}
+.carousel-control-next {
+  margin-right: 30%;
+}

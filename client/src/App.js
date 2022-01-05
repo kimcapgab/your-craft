@@ -11,6 +11,8 @@ import {verifyUser} from './services/userApi'
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout/Layout'
 import About from './screens/About/About';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 
 
@@ -30,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <Layout user={user} setUser={setUser}>
+      <Layout user={user} setUser={setUser} >
       <Routes>
         <Route path='/' element={<Home user={user} setUser={setUser} toggle={toggle} setToggle={setToggle}/>} />
         <Route path="/create"
