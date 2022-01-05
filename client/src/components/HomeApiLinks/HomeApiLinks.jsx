@@ -2,6 +2,7 @@
 import { useNavigate } from 'react-router-dom';
 import { signOut } from '../../services/userApi'
 import Carosel from '../Carousel/Carousel';
+import "./HomeApiLinks.css"
 
 
 
@@ -29,9 +30,11 @@ function HomeApiLinks({ user, bevs, setUser}) {
           <div>
             <Carosel bevs={bevs}/>
             <h1>Brewers, Distillers, and Winemakers</h1>
-            <h2>Create an account with us today to promote YourCraft!</h2>
-            <button onClick={() => nav('/sign-in')}>Sign In</button>
-            <button onClick={()=>nav('/sign-up')}>Sign Up</button>
+            <h2>Create an account with us today to promote <br />  YourCraft!</h2>
+              <div className='center-buttons-7'>
+                <button onClick={() => nav('/sign-in')}>Sign In</button>
+                <button onClick={() => nav('/sign-up')}>Sign Up</button>
+              </div>
           </div>
       }
     </div>
