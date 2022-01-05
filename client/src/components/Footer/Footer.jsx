@@ -17,25 +17,46 @@ const Footer = ({ user, setUser }) => {
 
   return (
   <footer>
-    <div id='left-container'>
-      <Link className='left-container-links' to='/'>Home</Link>
+      <div id='left-container'>
+        <div className='footer-left-left'>
+        <h3>YourCraft</h3>
+        </div>
+        
+        <img className='vl' src="https://res.cloudinary.com/dn2x2ldxj/image/upload/v1641416436/Project%203%20/Your_Craft_Logo_200_x_500_px_3_yh6vld.png" alt="vertical-line" />
+      <div className='footer-left-right'>
+        <Link className='left-container-links' to='/'>Home</Link>
       <Link className='left-container-links' to='/AboutUs'>About</Link>
-      <Link className='left-container-links' to='/bevs/all'>All</Link>
+          <Link className='left-container-links' to='/bevs/all'>All</Link>
+          </div>
     </div>
     <div id='right-container' >
       
       {
         user === null &&
-        <>
+          <div className='footer-right'>
+            
+            <div className='footer-right-left'>
+            <h3>Brewers, Distillers <br/> and Winemakers</h3>
+            </div>
+          <img className='vl' src="https://res.cloudinary.com/dn2x2ldxj/image/upload/v1641416436/Project%203%20/Your_Craft_Logo_200_x_500_px_3_yh6vld.png"  alt="vertical-line" />
+
+          <div className='footer-right-right'>
           <Link className='right-container-links' to='/sign-up'> Sign Up </Link>
-          <Link className='right-container-links' to='/sign-in'> Sign In </Link>
-        </>}
+              <Link className='right-container-links' to='/sign-in'> Sign In </Link>
+
+            </div> 
+        </div>}
       {
         user &&
-        <>
-          <h3>{`Welcome, ${user.username}`}</h3>
-          <h3 onClick={handleSignOut}> Sign Out </h3>
-        </>}
+          <div className='footer-right'>
+              <div className='footer-right-left'>
+                <h3>{`Welcome, ${user.username}`}</h3>
+                </div>
+            <img className='vl' src="https://res.cloudinary.com/dn2x2ldxj/image/upload/v1641416436/Project%203%20/Your_Craft_Logo_200_x_500_px_3_yh6vld.png"  alt="vertical-line" />
+          <div className='footer-right-right'>
+                <h3 onClick={handleSignOut}> Sign Out </h3>
+                </div>
+        </div>}
     </div>
   </footer>
 )
