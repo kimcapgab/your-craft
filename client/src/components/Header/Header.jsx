@@ -5,7 +5,7 @@ import './Header.css'
 const Header = () =>
   <header>
     <div id='logo-container'>
-      <Link to='/' ><img src={logo} alt='Your Craft'/></Link>
+      <Link to='/' ><img id='logo' src={logo} alt='Your Craft'/></Link>
     </div>
   </header>
 
