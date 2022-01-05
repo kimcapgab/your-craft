@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import "./Nav.css"
 
 
 const Nav = () => {
@@ -9,11 +10,11 @@ const Nav = () => {
     <nav>
       <div className='left-side-conatiner'></div>
       <div className='right-side-container'>
-        <button to='/bevs/all' id='allBevs'>All</button>
+        <Link to='/bevs/all' id='allBevs'>All</Link>
         <div className='inner-button-container-7'>
-          <button to='/bevs/beer' id='allBeer'>Beer</button>
-          <button to='/bevs/wine' id='allWine'>Wine</button>
-          <button to='/bevs/liquor' id='allBevs'>Liquor</button>
+          <Link to='/bevs/beer' id='allBeer'>Beer</Link>
+          <Link to='/bevs/wine' id='allWine'>Wine</Link>
+          <Link to='/bevs/liquor' id='allBevs'>Liquor</Link>
         </div>
       </div>
       </nav>
