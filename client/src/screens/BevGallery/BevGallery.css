@@ -1,5 +1,15 @@
-.bevCard {
+.bevContainer {
   display: flex;
-  height: 100px;
-  width: 500px;
+  background-color: transparent;
+  /* border: 2px solid red; */
+  width: 80vw;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
+
+/* @media screen (max-width: 750px) {
+  .bevContainer {
+    flex-direction: column-wrap;
+  }
+} */

@@ -30,7 +30,7 @@ export default function BevGallery({toggle}) {
     <>
       <Nav />
       <div className="bevContainer">
-        <div className="bevCard">
+        
           {results &&
             results.map((bev) => (
               
@@ -52,7 +52,7 @@ export default function BevGallery({toggle}) {
                   
                 />
             ))}
-        </div>
+      
       </div>
       </>
   );

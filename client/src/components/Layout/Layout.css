@@ -10,7 +10,6 @@
 .layout-children {
   flex: 2;
   padding: 100px;
-  padding-top: 30px;
   background-color: #1d2d44;
 }
 h1,
@@ -23,9 +22,6 @@ a {
 }
 * {
   font-family: "El Messiri", sans-serif;
-}
-img {
-  width: 10vw;
 }
 button {
   background: none;
