@@ -22,6 +22,6 @@ export default function Home({user, setUser, toggle, }) {
     <div>
       <Nav />
       <HomeApiLinks bevs={bevs} user={user} setUser={setUser} />
-      </div>
+    </div>
   )
 }
