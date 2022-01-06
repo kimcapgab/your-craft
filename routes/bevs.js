@@ -5,6 +5,7 @@ import restrict from '../helpers/restrict.js'
 
 const router = Router()
 router.get('/bevs', controllers.getBevs)
+router.get('/bevs/:type', controllers.getBevsType)
 router.get('/bevs/:_id', controllers.getBev)
 router.post('/create', restrict, controllers.createBev)
 router.put('/edit/:_id', restrict, controllers.updateBev)
