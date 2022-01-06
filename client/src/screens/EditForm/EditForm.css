@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&display=swap");
+
+#edit-form{
+/* border: solid 3px blue; */
+display: flex;
+flex-wrap: wrap;
+flex-basis: 80vw;
+}
+
+#left-container-edit-form{
+  display: flex;
+  flex-direction: column;
+  /* border: solid 3px lightgreen; */
+  flex-grow: 2;
+}
+
+#image-edit-preview{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  width: 80%;
+  align-self: center;
+}
+
+#bev-edit-image{
+  margin: 0 auto;
+  margin-bottom: 3%;
+  height: 32vw;
+  width: 20vw;
+}
+
+#type-selector{
+  color: white;
+  text-align: center;
+  width: 80%;
+  align-self: center;
+  background-color: grey;
+  padding: 1%;
+}
+
+#image-edit-preview > input {
+  background-color: grey;
+  padding: 1%;
+}
+
+#bev-card-edit-container{
+  flex-grow: 2;
+  display: flex;
+  flex-flow: column;
+  background-color: #0D1321;
+  /* border: solid 3px red; */
+}
+
+.bev-card-edit-item{
+  /* border: solid 3px lightblue; */
+  color: white;
+  border: hidden;
+  outline: none;
+  /* flex-basis: 40vw; */
+  fill: none;
+  background: transparent;
+}
+
+.space-me{
+  margin: 2% 0 2% 0;
+}
+#description{
+  margin-bottom: 15%;
+}
+
+#right-title::placeholder{
+  text-align: center;
+}
+
+#right-edit-title{
+  text-align: center;
+  display: flex;
+  font-family: "Fredericka the Great";
+  font-size: 2em;
+  align-self: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#top-bev-edit-card{
+  /* border: 3px purple solid;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bottom-bev-edit-card{
+display: flex;
+flex-direction: column;
+
+}
+
+.bottom-right-edit-input{
+  display: flex;
+  /* border: lightcoral solid 3px; */
+  align-content: center;
+}
+
+.bottom-right-edit-input > p {
+  margin-top: 3.5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: white;
+}
+
+#save-edits{
+  display: flex;
+  /* border: solid 3px lightblue; */
+  width: 100%;
+  justify-content: center;
+  margin-top: 5%;
+  border: none;
+  font-family: "Fredericka the Great";
+  color: #f0ebd8;
+  font-size: 2em;
+}
+
+.save-edits-submit{
+  margin: 2% 3% 0 3%;
+}
