@@ -81,7 +81,7 @@ const insertData = async () => {
       abv: "6.7%",
       taste: "Pale Ale, White Wheat, Carapils, Special Roast, Caramel 60L",
       website: "https://uplandbeer.com/beers/dragonfly/",
-      imgURL: "https://products2.imgix.drizly.com/ci-guinness-draught-420c95ffc7f4bdc0.jpeg?auto=format%2Ccompress&ch=Width%2CDPR&fm=jpg&q=20",
+      imgURL: "https://res.cloudinary.com/dn2x2ldxj/image/upload/v1641507461/Project%203%20/Dragonfly-1_1_qzenfu.png",
       type: "beer",
     },
     {
