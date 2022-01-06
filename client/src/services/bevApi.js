@@ -9,6 +9,14 @@ export const getBevs = async () => {
     throw error
   }
 }
+export const getTypeBev = async (type) => {
+  try {
+    const res = await api.get(`/bevs/${type}`)
+    return res.data
+  } catch (error) {
+    throw error
+  }
+}
 
 export const getBev = async (id) => {
   try {

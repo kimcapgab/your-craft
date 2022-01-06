@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import "./BevGallery.css";
-import { getBevs } from "../../services/bevApi";
+import { getBevs, getTypeBev } from "../../services/bevApi";
 import BevPreview from "../../components/BevPreview/BevPreview";
 import Nav from "../../components/Nav/Nav";
 import { useParams } from "react-router-dom";
 
 
-export default function BevGallery({toggle}) {
+export default function BevGallery({toggle, setToggle}) {
   const [bevs, setBevs] = useState([]);
   const [results, setResults] = useState(null);
   const params = useParams();
@@ -19,19 +19,22 @@ export default function BevGallery({toggle}) {
     fetchAllBevs();
   }, [toggle]);
 
+
   useEffect(() => {
-    const foundType = bevs.filter((bev) => {
-      return bev.type === params.typeOf;
-    });
-    setResults(foundType);
-  }, [params.typeOf]);
+    const fetchAllBevs = async () => {
+      const foundType = await getTypeBev(params.typeOf);
+      setResults(foundType);
+    };
+    fetchAllBevs()
+  }, [params.typeOf, toggle]);
+
 
   return (
     <>
-      <Nav />
+      <Nav setToggle={setToggle}/>
       <div className="bevContainer">
-        
-          {results &&
+
+          {results && 
             results.map((bev) => (
               
                 <BevPreview

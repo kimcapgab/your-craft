@@ -10,6 +10,19 @@ export const getBevs = async (req, res) => {
     res.status(500).json({error: error.message})
   }
 }
+export const getBevsType = async (req, res) => {
+  try {
+    const { type } = req.params
+    const bevs = await Bev.find({
+      type
+    })
+    res.json(bevs)
+  } catch (error) {
+    console.log(error.message)
+    res.status(500).json({error: error.message})
+  }
+}
+
 
 export const getBev = async (req, res) => {
   try {

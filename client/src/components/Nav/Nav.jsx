@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import "./Nav.css"
 
 
-const Nav = () => {
+const Nav = ({setToggle}) => {
 
   
   
@@ -10,11 +10,11 @@ const Nav = () => {
     <nav>
       <div className='left-side-conatiner'></div>
       <div className='right-side-container'>
-        <Link to='/bevs/all' id='allBevs'>All</Link>
+          <Link onClick={()=>setToggle(e=>!e)}to='/bevs/all' id='allBevs'>All</Link>
         <div className='inner-button-container-7'>
-          <Link to='/bevs/beer' id='allBeer'>Beer</Link>
-          <Link to='/bevs/wine' id='allWine'>Wine</Link>
-          <Link to='/bevs/liquor' id='allBevs'>Liquor</Link>
+          <Link onClick={()=>setToggle(e=>!e)} to='/bevs/beer' id='allBeer'>Beer</Link>
+          <Link onClick={()=>setToggle(e=>!e)} to='/bevs/wine' id='allWine'>Wine</Link>
+          <Link onClick={()=>setToggle(e=>!e)} to='/bevs/liquor' id='allBevs'>Liquor</Link>
         </div>
       </div>
       </nav>
