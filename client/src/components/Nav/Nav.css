@@ -21,6 +21,12 @@
   font-size: 2em;
   color: #f0ebd8;
 }
+#allBeer:hover,
+#allWine:hover,
+#allBevs:hover {
+  /* text-decoration: underline blue; */
+  color: #7db6e9;
+}
 nav {
   margin-bottom: 4%;
 }
