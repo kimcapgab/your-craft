@@ -29,6 +29,12 @@
   color: #f0ebd8;
   font-size: 2em;
 }
+#create-a-bev:hover,
+#sign-outRon:hover,
+#sign-inRon:hover,
+#sign-upRon:hover {
+  color: #7db6e9;
+}
 .welcome {
   margin-top: 50px;
 }
