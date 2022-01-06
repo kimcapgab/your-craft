@@ -20,6 +20,7 @@ export default function Carosel({ bevs }) {
       <Carousel.Item>
           <img
             className='carousel-img'
+            alt={revBev[0].name}
           name={revBev[0].name}
           src={revBev[0].imgURL}
           onClick={()=>nav(`/bev/${revBev[0]._id}`)}
@@ -28,6 +29,7 @@ export default function Carosel({ bevs }) {
         <Carousel.Item>
           <img
             className='carousel-img'
+            alt={revBev[1].name}
           name={revBev[1].name}
           src={revBev[1].imgURL}
           onClick={()=>nav(`/bev/${revBev[1]._id}`)}
@@ -36,6 +38,7 @@ export default function Carosel({ bevs }) {
         <Carousel.Item>
           <img
             className='carousel-img'
+            alt={revBev[2].name}
           name={revBev[2].name}
           src={revBev[2].imgURL}
           onClick={()=>nav(`/bev/${revBev[2]._id}`)}

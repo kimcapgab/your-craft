@@ -54,7 +54,7 @@ export default function EditForm({ setToggle }) {
               <img
                 src={bev.imgURL}
                 id="bev-edit-image"
-                alt="preview of image"
+                alt="preview"
               />
             )}
             <div id="image-preview">

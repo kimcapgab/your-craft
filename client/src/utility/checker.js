@@ -1,5 +1,5 @@
 export const checkSpCharacters =(str)  =>{
-  let spChars = /[%^&*()_+\-=\[\]{};':`"\\|,<>\/?]+/;
+  let spChars = /[%^&*()_+\-=\\]{};':`"\\|,<>\?]+/;
     if(spChars.test(str)){
       return true;
     } else {
