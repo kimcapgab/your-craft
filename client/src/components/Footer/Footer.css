@@ -56,3 +56,6 @@ footer {
 .footer-right-right {
   width: 15vw;
 }
+.sign-out:hover {
+  color: #7db6e9;
+}

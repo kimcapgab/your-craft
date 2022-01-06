@@ -54,7 +54,7 @@ const Footer = ({ user, setUser }) => {
                 </div>
             <img className='vl' src="https://res.cloudinary.com/dn2x2ldxj/image/upload/v1641416436/Project%203%20/Your_Craft_Logo_200_x_500_px_3_yh6vld.png"  alt="vertical-line" />
           <div className='footer-right-right'>
-                <h3 onClick={handleSignOut}> Sign Out </h3>
+                <h3 className="sign-out" onClick={handleSignOut}> Sign Out </h3>
                 </div>
         </div>}
  
