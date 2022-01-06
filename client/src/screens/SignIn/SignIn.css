@@ -27,6 +27,10 @@
   margin: 5%;
 }
 
+.sign-in-form-text{
+  margin-bottom: -9%;
+}
+
 .welcome-back {
   font-family: "Fredericka the Great";
   color: #f0ebd8;
