@@ -36,8 +36,9 @@ export default function BevGallery({toggle}) {
               
                 <BevPreview
                   _id={bev._id}
-                  name={bev.name}
-                  imgURL={bev.imgURL}
+                  title={bev.title}
+                imgURL={bev.imgURL}
+                abv={bev.abv}
                   
                 />
               
@@ -47,8 +48,9 @@ export default function BevGallery({toggle}) {
               
                 <BevPreview
                   _id={bev._id}
-                  name={bev.name}
-                  imgURL={bev.imgURL}
+                  title={bev.title}
+                imgURL={bev.imgURL}
+                abv={bev.abv}
                   
                 />
             ))}

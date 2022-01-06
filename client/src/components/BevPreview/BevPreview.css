@@ -9,9 +9,22 @@ img {
   justify-content: center;
   align-items: center;
   /* border: 2px solid black; */
-  margin: 2vw;
+  margin: 4vw;
   width: 15vh;
+  height: 30vw;
 }
+#img-link2 {
+  margin-bottom: 2vw;
+}
+.bottom-card {
+  position: relative;
+  top: 20px;
+}
+.card-title,
+.card-abv {
+  text-decoration: underline #1d2d44;
+}
+
 #img-link {
   display: flex;
   justify-content: center;

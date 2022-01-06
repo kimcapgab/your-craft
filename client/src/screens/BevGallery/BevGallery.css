@@ -1,7 +1,6 @@
 .bevContainer {
   display: flex;
   background-color: transparent;
-  /* border: 2px solid red; */
   width: 80vw;
   flex-wrap: wrap;
   align-items: center;
