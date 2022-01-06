@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap");
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .layout {
   height: 100vh;
   display: flex;
@@ -38,7 +44,6 @@ button {
     flex-direction: column;
   }
   .layout-children {
-    width: 80vw;
     padding: 0px;
     margin: 0px;
     display: flex;
