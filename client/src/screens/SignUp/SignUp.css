@@ -7,6 +7,9 @@
   background-color: #1d2d44;
   color: #f0ebd8;
 }
+.sign-up-form-text{
+  margin-bottom: -3%;
+}
 
 .error-buttons {
   margin-top: 2%;

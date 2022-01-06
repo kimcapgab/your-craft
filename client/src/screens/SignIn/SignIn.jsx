@@ -78,9 +78,9 @@ export default function SignIn(props) {
         <h1 className='welcome-back'>Welcome Back</h1>
       </div>
       <form className='sign-in-form' onSubmit={onSignIn}>
-        <p>Username</p>
+        <p className='sign-in-form-text'>Username</p>
         <input name='username' type="text" value={form.username} onChange={handleChange} />
-        <p>Password</p>
+        <p className='sign-in-form-text'>Password</p>
         <input name='password' type="password"  value={form.password} onChange={handleChange} />
         {renderError()}
       </form>
