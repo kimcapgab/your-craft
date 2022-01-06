@@ -21,7 +21,7 @@ function HomeApiLinks({ user, bevs, setUser}) {
       {
         user ?
           <div>
-            <h1 >{`Welcome, ${user.username}`}</h1>
+            <h1 className="welcome">{`Welcome, ${user.username}`}</h1>
             <div className='center-buttons-7'>
               <button id='create-a-bev' onClick={() => { nav('/create') }}>Create <br />A Beverage</button>
               <img className='vl' src="https://res.cloudinary.com/dn2x2ldxj/image/upload/v1641416436/Project%203%20/Your_Craft_Logo_200_x_500_px_3_yh6vld.png"  alt="vertical-line" />
