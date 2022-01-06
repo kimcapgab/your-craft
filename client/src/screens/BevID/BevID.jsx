@@ -5,7 +5,7 @@ import { getBev } from "../../services/bevApi";
 import { useNavigate } from "react-router-dom";
 import "./BevID.css";
 
-export default function BevID({ user, toggle }) {
+export default function BevID({ user }) {
   const [bev, setBev] = useState({});
   const { id } = useParams();
   const nav = useNavigate();
@@ -16,7 +16,7 @@ export default function BevID({ user, toggle }) {
       setBev(bev);
     };
     fetchBev();
-  }, [id, toggle]);
+  }, [id]);
 
   const { title, style, aroma, description, abv, taste, website, imgURL } = bev;
 
