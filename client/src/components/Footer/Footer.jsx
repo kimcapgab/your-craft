@@ -19,7 +19,7 @@ const Footer = ({ user, setUser }) => {
   <footer>
       <div id='left-container'>
         <div className='footer-left-left'>
-        <h3>YourCraft</h3>
+        <h3 className='us'>YourCraft</h3>
         </div>
         
         <img className='vl' src="https://res.cloudinary.com/dn2x2ldxj/image/upload/v1641416436/Project%203%20/Your_Craft_Logo_200_x_500_px_3_yh6vld.png" alt="vertical-line" />
@@ -29,7 +29,7 @@ const Footer = ({ user, setUser }) => {
           <Link className='left-container-links' to='/bevs/all'>All</Link>
           </div>
     </div>
-    <div id='right-container' >
+  
       
       {
         user === null &&
@@ -42,7 +42,7 @@ const Footer = ({ user, setUser }) => {
 
           <div className='footer-right-right'>
           <Link className='right-container-links' to='/sign-up'> Sign Up </Link>
-              <Link className='right-container-links' to='/sign-in'> Sign In </Link>
+            <Link className='right-container-links' to='/sign-in'> Sign In </Link>
 
             </div> 
         </div>}
@@ -57,7 +57,7 @@ const Footer = ({ user, setUser }) => {
                 <h3 onClick={handleSignOut}> Sign Out </h3>
                 </div>
         </div>}
-    </div>
+ 
   </footer>
 )
 }
