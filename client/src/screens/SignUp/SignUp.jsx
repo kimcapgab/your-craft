@@ -68,13 +68,13 @@ export default function SignUp({ setUser }) {
     <div className='sign-up'>
     
       <form className='formR' >
-        <p>Username</p>
+        <p className='sign-up-form-text' >Username</p>
         <input type="text"  value={username} onChange={(e) => setUsername(e.target.value)} />
-        <p>Email</p>
+        <p className='sign-up-form-text'>Email</p>
         <input type="email"  value={email} onChange={(e) => setEmail(e.target.value)} />
-        <p>Password</p>
+        <p className='sign-up-form-text'>Password</p>
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <p>Confirm Password</p>
+        <p className='sign-up-form-text'>Confirm Password</p>
         <input type="password"  value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
         
       </form>

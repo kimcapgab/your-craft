@@ -5,8 +5,8 @@ import { getBev } from "../../services/bevApi";
 import { useNavigate } from "react-router-dom";
 import "./BevID.css";
 
-export default function BevID({ user }) {
-  const [bev, setBev] = useState([]);
+export default function BevID({ user, toggle }) {
+  const [bev, setBev] = useState({});
   const { id } = useParams();
   const nav = useNavigate();
 
@@ -16,11 +16,11 @@ export default function BevID({ user }) {
       setBev(bev);
     };
     fetchBev();
-  }, [id]);
+  }, [id, toggle]);
 
   const { title, style, aroma, description, abv, taste, website, imgURL } = bev;
 
-  return (
+  return (<div>{ bev &&
     <div className="whole-detail">
       <div id="detail-top">
         <div id="bevimg">
@@ -77,6 +77,6 @@ export default function BevID({ user }) {
           Edit
         </button>
       )}</div>
-    </div>
+    </div>}</div>
   );
 }
