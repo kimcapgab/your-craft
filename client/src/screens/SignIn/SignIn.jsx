@@ -58,7 +58,6 @@ export default function SignIn(props) {
     }
   }
   const renderError = () => {
-    const toggleForm = form.isError ? 'DANGER' : ''
     if (form.isError) {
       return (
         <>
