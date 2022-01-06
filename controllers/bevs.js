@@ -26,8 +26,8 @@ export const getBevsType = async (req, res) => {
 
 export const getBev = async (req, res) => {
   try {
-    const { _id } = req.params
-    const bev = await Bev.findById(_id)
+    const { id } = req.params
+    const bev = await Bev.findById(id)
     if (bev) {
       return res.json(bev)
     } else {
