@@ -5,7 +5,7 @@ h2 {
 
 .intro-home-7 {
   color: #f0ebd8;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -16,10 +16,41 @@ h2 {
   justify-content: space-between;
 }
 
+.home-page-image-container-7 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  width: 89vw;
+  height: 28vw;
+}
+
+.home-page-image-content-7 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  width: 89vw;
+  height: 28vw;
+  transition: 0.5s ease;
+  opacity: 0;
+  padding: 4%;
+  justify-self: center;
+  text-align: center;
+}
+
+.home-page-image-container-7:hover .home-page-image-content-7 {
+  opacity: 1;
+}
+
 #home-page-image-7 {
-  width: 60vw;
-  align-items: center;
-  margin-top: 5%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 89vw;
+  height: 28vw;
+  margin: 0 auto;
+  justify-self: center;
+  object-fit: none;
+}
+
+.home-img-div {
+  display: flex;
+  justify-self: center;
 }
