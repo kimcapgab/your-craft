@@ -50,3 +50,34 @@ h2 {
   display: flex;
   justify-content: center;
 }
+@media (min-width: 1400px) {
+  .home-page-image-container-7 {
+    height: 780px;
+  }
+}
+@media (max-width: 1350px) {
+  .home-page-image-container-7 {
+    height: 600px;
+  }
+}
+@media (max-width: 1050px) {
+  .home-page-image-container-7 {
+    height: 500px;
+  }
+  .intro-home-7 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .home-page-image-container-7 {
+    height: 420px;
+  }
+}
+@media (max-width: 600px) {
+  .home-page-image-container-7 {
+    height: 350px;
+  }
+  .intro-home-7 {
+    font-size: 15px;
+  }
+}
