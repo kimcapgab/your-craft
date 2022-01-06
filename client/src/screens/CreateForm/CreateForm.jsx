@@ -41,7 +41,7 @@ export default function CreateForm({ setToggle }) {
         { bev.imgURL !== '' && 
           <img src={bev.imgURL} id='bev-image'alt='preview of image' />}
         <div id='image-preview'>
-          <p>URL for Image of Beverage (Transparent Backgrounds Work Best)  </p>
+          <p>URL for Image of Beverage (Vertical Images with Transparent Backgrounds Work Best)  </p>
         <input
           className="left-container-item"
           value={bev.imgURL}
@@ -118,7 +118,7 @@ export default function CreateForm({ setToggle }) {
             <input
               className="bev-card-item"
               id="right-abv"
-              type="number"
+            
               value={bev.abv}
               name="abv"
               onChange={handleChange}

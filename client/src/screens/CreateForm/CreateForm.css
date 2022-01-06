@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&display=swap");
 
-#create-form{
-/* border: solid 3px blue; */
-display: flex;
-flex-wrap: wrap;
-flex-basis: 80vw;
+#create-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 80vw;
 }
 
-#left-container-create-form{
+#left-container-create-form {
   display: flex;
   flex-direction: column;
-  /* border: solid 3px lightgreen; */
   flex-grow: 2;
 }
 
-#image-preview{
+#image-preview {
   display: flex;
   flex-direction: column;
   color: white;
@@ -23,14 +21,14 @@ flex-basis: 80vw;
   align-self: center;
 }
 
-#bev-image{
+#bev-image {
   margin: 0 auto;
   margin-bottom: 3%;
   height: 32vw;
   width: 20vw;
 }
 
-#type-selector{
+#type-selector {
   color: white;
   text-align: center;
   width: 80%;
@@ -44,36 +42,33 @@ flex-basis: 80vw;
   padding: 1%;
 }
 
-#bev-card-container{
+#bev-card-container {
   flex-grow: 2;
   display: flex;
   flex-flow: column;
-  background-color: #0D1321;
-  /* border: solid 3px red; */
+  background-color: #0d1321;
 }
 
-.bev-card-item{
-  /* border: solid 3px lightblue; */
+.bev-card-item {
   color: white;
   border: hidden;
   outline: none;
-  /* flex-basis: 40vw; */
   fill: none;
   background: transparent;
 }
 
-.space-me{
+.space-me {
   margin: 2% 0 2% 0;
 }
-#description{
+#description {
   margin-bottom: 15%;
 }
 
-#right-title::placeholder{
+#right-title::placeholder {
   text-align: center;
 }
 
-#right-title{
+#right-title {
   text-align: center;
   display: flex;
   font-family: "Fredericka the Great";
@@ -83,35 +78,32 @@ flex-basis: 80vw;
   justify-content: center;
 }
 
-#top-bev-card{
-  /* border: 3px purple solid;  */
+#top-bev-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#bottom-bev-card{
-display: flex;
-flex-direction: column;
-
+#bottom-bev-card {
+  display: flex;
+  flex-direction: column;
 }
 
-.bottom-right-input{
+.bottom-right-input {
   display: flex;
-  /* border: lightcoral solid 3px; */
+
   align-content: center;
 }
 
 .bottom-right-input > p {
-  margin-top: 3.5%;
+  margin-top: 2%;
   margin-left: 2%;
   margin-right: 2%;
   color: white;
 }
 
-#bev-card-submit{
+#bev-card-submit {
   display: flex;
-  /* border: solid 3px lightblue; */
   width: 100%;
   justify-content: center;
   margin-top: 5%;
