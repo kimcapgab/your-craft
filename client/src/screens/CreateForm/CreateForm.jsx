@@ -49,7 +49,7 @@ export default function CreateForm({ setToggle }) {
           onChange={handleChange}
           />
           </div>
-        <label for="type-selector">Type: </label>
+        <label for="type-selector"> < br/> </label>
         <select
           className="left-container-item"
           name="type"
@@ -64,37 +64,48 @@ export default function CreateForm({ setToggle }) {
         </select>
       </div>
       <div id="bev-card-container">
+        <h2 className="required-text">All fields are required</h2>
         <div id="top-bev-card">
           <input
             className="bev-card-item space-me"
             id="right-title"
-            placeholder="Title:"
+            placeholder="Enter Title"
             value={bev.title}
             name="title"
             onChange={handleChange}
           />
+          </div>
+        <div id="bottom-bev-card">
+          <div className="bev-id-top-form">
+          <div className='bottom-right-input'>
+          <h3>Style:</h3>
           <input
             className="bev-card-item space-me"
             id="right-style"
-            placeholder="Style:"
             value={bev.style}
             name="style"
             onChange={handleChange}
-          />
+              />
+            </div>
+            < br/>
+            <div className='bottom-right-input'>
+          <h3>Description:</h3>
           <input
             className="bev-card-item space-me"
             id="description"
             type='textarea'
-            placeholder="Description:"
             value={bev.description}
             name="description"
             onChange={handleChange}
-          />
+              />
+              </div>
+          </div>
+          < br />
           <h2>Characteristics</h2>
-        </div>
-        <div id="bottom-bev-card">
+        
+        
           <div className='bottom-right-input'>
-            <p>Aroma:</p>
+            <h3 className="create-p-tags">Aroma: </h3>
             <input
               className="bev-card-item"
               id="right-aroma"
@@ -104,7 +115,7 @@ export default function CreateForm({ setToggle }) {
             />
           </div>
           <div className='bottom-right-input'>
-            <p>Taste:</p>
+            <h3 className="create-p-tags">Taste: </h3>
             <input
               className="bev-card-item"
               id="right-taste"
@@ -114,7 +125,7 @@ export default function CreateForm({ setToggle }) {
             />
           </div>
           <div className='bottom-right-input'>
-            <p>ABV:</p>
+            <h3 className="create-p-tags">Alcohol By Volume: </h3>
             <input
               className="bev-card-item"
               id="right-abv"
@@ -125,7 +136,7 @@ export default function CreateForm({ setToggle }) {
             />
           </div>
           <div className='bottom-right-input'>
-            <p>Link to Buy:</p>
+            <h3 className="create-h3-tag">Link to Buy: </h3>
             <input
               className="bev-card-item"
               id="right-website"
