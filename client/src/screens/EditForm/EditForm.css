@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&display=swap");
 
-#edit-form{
-/* border: solid 3px blue; */
-display: flex;
-flex-wrap: wrap;
-flex-basis: 80vw;
+#edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 80vw;
 }
 
-#left-container-edit-form{
+#left-container-edit-form {
   display: flex;
   flex-direction: column;
-  /* border: solid 3px lightgreen; */
   flex-grow: 2;
 }
 
-#image-edit-preview{
+#image-edit-preview {
   display: flex;
   flex-direction: column;
   color: white;
@@ -23,14 +21,14 @@ flex-basis: 80vw;
   align-self: center;
 }
 
-#bev-edit-image{
+#bev-edit-image {
   margin: 0 auto;
   margin-bottom: 3%;
   height: 32vw;
   width: 20vw;
 }
 
-#type-selector{
+#type-selector {
   color: white;
   text-align: center;
   width: 80%;
@@ -44,36 +42,34 @@ flex-basis: 80vw;
   padding: 1%;
 }
 
-#bev-card-edit-container{
+#bev-card-edit-container {
   flex-grow: 2;
   display: flex;
   flex-flow: column;
-  background-color: #0D1321;
-  /* border: solid 3px red; */
+  background-color: #0d1321;
 }
 
-.bev-card-edit-item{
-  /* border: solid 3px lightblue; */
+.bev-card-edit-item {
   color: white;
   border: hidden;
   outline: none;
-  /* flex-basis: 40vw; */
+
   fill: none;
   background: transparent;
 }
 
-.space-me{
+.space-me {
   margin: 2% 0 2% 0;
 }
-#description{
+#description {
   margin-bottom: 15%;
 }
 
-#right-title::placeholder{
+#right-title::placeholder {
   text-align: center;
 }
 
-#right-edit-title{
+#right-edit-title {
   text-align: center;
   display: flex;
   font-family: "Fredericka the Great";
@@ -83,35 +79,32 @@ flex-basis: 80vw;
   justify-content: center;
 }
 
-#top-bev-edit-card{
-  /* border: 3px purple solid;  */
+#top-bev-edit-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#bottom-bev-edit-card{
-display: flex;
-flex-direction: column;
-
+#bottom-bev-edit-card {
+  display: flex;
+  flex-direction: column;
 }
 
-.bottom-right-edit-input{
+.bottom-right-edit-input {
   display: flex;
-  /* border: lightcoral solid 3px; */
+
   align-content: center;
 }
 
 .bottom-right-edit-input > p {
-  margin-top: 3.5%;
+  margin-top: 2%;
   margin-left: 2%;
   margin-right: 2%;
   color: white;
 }
 
-#save-edits{
+#save-edits {
   display: flex;
-  /* border: solid 3px lightblue; */
   width: 100%;
   justify-content: center;
   margin-top: 5%;
@@ -121,6 +114,12 @@ flex-direction: column;
   font-size: 2em;
 }
 
-.save-edits-submit{
+.save-edits-submit {
   margin: 2% 3% 0 3%;
+}
+#delete-edits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
 }

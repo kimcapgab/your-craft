@@ -137,7 +137,7 @@ export default function EditForm({ setToggle }) {
                 <input
                   className="bev-card-edit-item"
                   id="right-abv"
-                  type="number"
+                
                   value={bev.abv}
                   name="abv"
                   onChange={handleChange}
@@ -158,10 +158,11 @@ export default function EditForm({ setToggle }) {
         </form>
 
         {deleteToggle ? (
-          <div>
-            <h3>Are You Sure?</h3>
-            <h3 onClick={() => setDeleteToggle(false)}>No</h3>
-            <h3 onClick={handleDelete}>Yes</h3>
+          <div id='delete-edits'>
+          <h3 >Are You Sure?</h3>
+          <h3 className='save-edits-submit' onClick={handleDelete}>{`Yes, Delete ${bev.title}`}</h3>
+            <h3 className='save-edits-submit' onClick={() => setDeleteToggle(false)}>Oops</h3>
+            
           </div>
         ) : (
           <div id='save-edits'>
