@@ -63,7 +63,7 @@ export default function SignIn(props) {
       return (
         <>
           <h3>{form.errorMsg}</h3>
-          <button className='buttonRg' type='submit' className={toggleForm}>Let's Try That Again</button>
+          <button className='buttonRg' type='submit'>Let's Try That Again</button>
           </>
       )
     } else {

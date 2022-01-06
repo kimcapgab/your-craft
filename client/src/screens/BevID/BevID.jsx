@@ -24,7 +24,7 @@ export default function BevID({ user }) {
     <div className="whole-detail">
       <div id="detail-top">
         <div id="bevimg">
-          <img src={imgURL} />
+          <img src={imgURL} alt={title} />
         </div>
         <div className="cardRon">
           <div id="details-top">
@@ -54,7 +54,7 @@ export default function BevID({ user }) {
               <h3>{abv}</h3>
             </div>
 
-            <a id='buy' href={website} target="_blank">
+            <a id='buy' href={website} rel="noreferrer" target="_blank">
               Buy Here
             </a>
           </div>

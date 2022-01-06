@@ -39,7 +39,7 @@ export default function CreateForm({ setToggle }) {
     <form id="create-form" onSubmit={handleSubmit}>
       <div id="left-container-create-form">
         { bev.imgURL !== '' && 
-          <img src={bev.imgURL} id='bev-image'alt='preview of image' />}
+          <img src={bev.imgURL} id='bev-image'alt='preview' />}
         <div id='image-preview'>
           <p>URL for Image of Beverage (Vertical Images with Transparent Backgrounds Work Best)  </p>
         <input
