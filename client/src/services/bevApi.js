@@ -20,7 +20,7 @@ export const getTypeBev = async (type) => {
 
 export const getBev = async (id) => {
   try {
-    const res = await api.get(`/bevs/${id}`)
+    const res = await api.get(`/bev/${id}`)
     return res.data
   } catch (error) {
     throw error
