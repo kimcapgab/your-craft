@@ -1,0 +1,33 @@
+.us-img > img {
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  margin: 0 auto;
+}
+.us-img {
+  display: flex;
+  justify-content: center;
+}
+.us-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.us-content > h3 {
+  font-size: 3em;
+}
+.ron-links-container {
+  display: flex;
+  justify-content: space-around;
+}
+.ron-links-container div {
+  margin: 10%;
+}
+div > a {
+  text-decoration: none;
+  color: #f0ebd8;
+  font-size: 3em;
+}
+#github {
+  font-size: 40em;
+}
