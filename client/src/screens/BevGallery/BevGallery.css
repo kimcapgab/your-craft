@@ -6,9 +6,13 @@
   align-items: center;
   justify-content: center;
 }
-
-/* @media screen (max-width: 750px) {
+@media (max-width: 500px) {
   .bevContainer {
-    flex-direction: column-wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
   }
-} */
+}
