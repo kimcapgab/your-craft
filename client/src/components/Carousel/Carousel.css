@@ -15,3 +15,27 @@
 .carousel-control-next {
   margin-right: 30%;
 }
+@media (max-width: 375px) {
+  .carousel-img {
+    width: 40vw;
+    position: relative;
+    right: 45px;
+    bottom: 25px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin: 50px;
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .carousel-img {
+    width: 40vw;
+    position: relative;
+    right: 65px;
+    bottom: 25px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin: 50px;
+  }
+}

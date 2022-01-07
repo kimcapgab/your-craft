@@ -2,7 +2,7 @@
 
 footer {
   background-image: url("https://blessedbythelord.org/wp-content/uploads/2021/07/0e3863867_1416877594_wooden-header.jpg");
-  height: 30vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   font-size: 2em;
@@ -59,4 +59,19 @@ footer {
 }
 .sign-out:hover {
   color: #7db6e9;
+}
+@media (max-width: 500px) {
+  footer {
+    position: static;
+    bottom: 0;
+  }
+  .us {
+    display: none;
+  }
+  .footer-right-right,
+  .footer-right-left,
+  #footer-vl {
+    position: relative;
+    right: 20vw;
+  }
 }

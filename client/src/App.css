@@ -344,3 +344,19 @@ template {
 [hidden] {
   display: none;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+    /* min-height: 100%; */
+    overflow-x: hidden;
+  }
+}
+/* @media (max-width: 500px) {
+  body,
+  html {
+    position: relative;
+    min-height: 768px;
+    height: 100%;
+  }
+} */
