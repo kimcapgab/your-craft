@@ -1,6 +1,4 @@
 img {
-  /* max-width: 100%;
-  max-height: 100%; */
   width: 10vw;
   height: 16vw;
 }
@@ -8,11 +6,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid black; */
   margin: 4vw;
   width: 15vh;
   height: 30vw;
   margin-top: -70px;
+  transform: scale(1);
 }
 #img-link2 {
   margin-bottom: 2vw;
@@ -31,14 +29,32 @@ img {
   justify-content: center;
   align-items: center;
   max-height: 100%;
-  /* border: 5px solid red; */
 }
-@media only screen and (max-width: 375px) {
+@media (max-width: 375px) {
   img {
     width: 40vw;
     height: 64vw;
   }
   .card-1 {
-    margin: 10vw;
+    margin: 30vw;
+  }
+}
+.bottom {
+  text-align: center;
+  opacity: 0;
+  height: 100px;
+}
+.card-1:hover .bottom {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+.card-1:hover {
+  transform: scale(1.2);
+  transition: all ease-in 0.2s;
+}
+@media (max-width: 500px) {
+  img {
+    width: 40vw;
+    height: 64vw;
   }
 }

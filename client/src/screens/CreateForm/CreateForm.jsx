@@ -64,7 +64,7 @@ export default function CreateForm({ setToggle }) {
         </select>
       </div>
       <div id="bev-card-container">
-        <h2 className="required-text">All fields are required</h2>
+        <h2 className="required-text">All fields are required.</h2>
         <div id="top-bev-card">
           <input
             className="bev-card-item space-me"
@@ -88,12 +88,11 @@ export default function CreateForm({ setToggle }) {
               />
             </div>
             < br/>
-            <div className='bottom-right-input'>
+            <div className='bottom-right-input-des'>
           <h3>Description:</h3>
-          <input
+            <input
             className="bev-card-item space-me"
             id="description"
-            type='textarea'
             value={bev.description}
             name="description"
             onChange={handleChange}
