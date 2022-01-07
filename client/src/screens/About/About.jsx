@@ -22,13 +22,13 @@ function About() {
                 working in various environments from large corporations to start-ups, I am ready to help a team achieve
               company goals and to expand my knowledge and skillset to build a long-term career with a forward-thinking company.</h2>
             <div className='ron-links-container'>
-              <div>
+              <div className="linkRon">
             <a href='http://www.linkedin.com/in/kim-capilla-gabbert'
               target='_blank'>
               LinkedIn
               </a>
               </div>
-              <div>
+              <div className="linkRon">
             <a href='https://github.com/kimcapgab'
               target='_blank'>
               GitHub
@@ -45,14 +45,14 @@ function About() {
             <h1>Ron Garofalo</h1>
             <h2>Is he too handsome? Maybe. </h2>
             <div className='ron-links-container'>
-              <div>
+              <div className="linkRon">
             <a href='https://www.linkedin.com/in/ron-garo/'
               target='_blank'>
                 LinkedIn
               
                 </a>
                 </div>
-          <div>
+          <div className="linkRon">
             <a href='https://github.com/Garofalo'
               target='_blank'>
               GitHub
@@ -72,13 +72,13 @@ function About() {
               I aspire to accomplish all my career goals. I am a quick and effective learner with communicative and teamwork skills.
               I enjoy challenging my brain with tasks and problems. I am also an ammeter musician!</h2>
             <div className='ron-links-container'>
-              <div>
+              <div className="linkRon">
             <a href='https://www.linkedin.com/in/jeshaiah-miller-a5ba10221/'
               target='_blank'>
               LinkedIn
                 </a>
               </div>
-              <div>
+              <div className="linkRon">
             <a href='https://github.com/jeshaiahmiller'
               target='_blank'>
               GitHub

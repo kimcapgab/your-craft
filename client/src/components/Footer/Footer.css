@@ -56,9 +56,16 @@ footer {
 }
 .footer-right-right {
   width: 15vw;
+  font-size: 28px;
 }
 .sign-out:hover {
   color: #7db6e9;
+}
+#footer-vl {
+  height: 6em;
+}
+#sign-up-link {
+  margin-bottom: -10px;
 }
 @media (max-width: 500px) {
   footer {

@@ -41,7 +41,7 @@ const Footer = ({ user, setUser }) => {
           <img className='vl' id="footer-vl" src="https://res.cloudinary.com/dn2x2ldxj/image/upload/v1641416436/Project%203%20/Your_Craft_Logo_200_x_500_px_3_yh6vld.png"  alt="vertical-line" />
 
           <div className='footer-right-right'>
-          <Link className='right-container-links' to='/sign-up'> Sign Up </Link>
+          <Link className='right-container-links' id="sign-up-link" to='/sign-up'> Sign Up </Link>
             <Link className='right-container-links' to='/sign-in'> Sign In </Link>
 
             </div> 
@@ -62,3 +62,16 @@ const Footer = ({ user, setUser }) => {
 )
 }
 export default Footer
+
+
+
+
+
+
+
+
+
+
+
+
+
