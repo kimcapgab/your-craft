@@ -23,13 +23,15 @@ function About() {
               company goals and to expand my knowledge and skillset to build a long-term career with a forward-thinking company.</h2>
             <div className='ron-links-container'>
               <div className="linkRon">
-            <a href='http://www.linkedin.com/in/kim-capilla-gabbert'
+                <a href='http://www.linkedin.com/in/kim-capilla-gabbert'
+                  rel="noreferrer" 
               target='_blank'>
               LinkedIn
               </a>
               </div>
               <div className="linkRon">
-            <a href='https://github.com/kimcapgab'
+                <a href='https://github.com/kimcapgab'
+                  rel="noreferrer" 
               target='_blank'>
               GitHub
                 </a>
@@ -46,14 +48,16 @@ function About() {
             <h2>Is he too handsome? Maybe. </h2>
             <div className='ron-links-container'>
               <div className="linkRon">
-            <a href='https://www.linkedin.com/in/ron-garo/'
+                <a href='https://www.linkedin.com/in/ron-garo/'
+                  rel="noreferrer" 
               target='_blank'>
                 LinkedIn
               
                 </a>
                 </div>
           <div className="linkRon">
-            <a href='https://github.com/Garofalo'
+                <a href='https://github.com/Garofalo'
+                  rel="noreferrer" 
               target='_blank'>
               GitHub
               </a>
@@ -73,13 +77,15 @@ function About() {
               I enjoy challenging my brain with tasks and problems. I am also an ammeter musician!</h2>
             <div className='ron-links-container'>
               <div className="linkRon">
-            <a href='https://www.linkedin.com/in/jeshaiah-miller-a5ba10221/'
+                <a href='https://www.linkedin.com/in/jeshaiah-miller-a5ba10221/'
+                  rel="noreferrer" 
               target='_blank'>
               LinkedIn
                 </a>
               </div>
               <div className="linkRon">
-            <a href='https://github.com/jeshaiahmiller'
+                <a href='https://github.com/jeshaiahmiller'
+                  rel="noreferrer" 
               target='_blank'>
               GitHub
                 </a>
