@@ -135,3 +135,32 @@
 .required-text {
   font-size: 15px;
 }
+
+#right-style,
+#description,
+#right-aroma,
+#right-taste,
+#right-abv,
+#right-website {
+  font-family: "Fredericka the Great";
+  font-size: 1.75rem;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 2%;
+}
+
+#description,
+#right-style {
+  margin-top: -5px;
+}
+
+input#description.bev-card-item.space-me {
+  width: 90%;
+}
+
+.bottom-right-input-des {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  margin-bottom: -5%;
+}
