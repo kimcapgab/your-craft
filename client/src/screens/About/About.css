@@ -23,7 +23,7 @@
 .ron-links-container div {
   margin: 10%;
 }
-div > a {
+.linkRon a {
   text-decoration: none;
   color: #f0ebd8;
   font-size: 3em;

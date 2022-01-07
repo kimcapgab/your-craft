@@ -37,15 +37,13 @@ function App() {
       <Layout user={user} setUser={setUser} >
       <Routes>
         <Route path='/' element={<Home user={user} setUser={setUser} toggle={toggle} setToggle={setToggle}/>} />
-        <Route path="/users/:id/create"
+        <Route path="/create"
           element={<CreateForm user={user} setToggle={setToggle}/>} />
         <Route path='/sign-up' element={<SignUp user={user} setUser={setUser}/>} />
         <Route path='/sign-in' element={<SignIn user={user} setUser={setUser} />} />
         <Route path='/edit/:id' element={<EditForm user={user} setToggle={setToggle}/>} />
-          <Route path='/bev/:bevId' element={<BevID user={user} toggle={toggle} />} />
-          <Route path='/users/:id/bevs/:bevId' element={<BevID user={user} toggle={toggle}/>} />
+          <Route path='/bev/:id' element={<BevID user={user} toggle={toggle} />} />
           <Route path='/bevs/:typeOf' element={<BevGallery user={user} toggle={toggle} setToggle={setToggle} />} />
-          <Route path='/users/:id/bevs' element={<BevGallery user={user} setToggle={setToggle}/>}/>
         <Route path='/aboutUs' element={<About/>}/>
       </Routes>
       </Layout>
