@@ -50,7 +50,7 @@
 }
 
 .bev-card-edit-item {
-  color: white;
+  color: #f0ebd8;
   border: hidden;
   outline: none;
 
@@ -100,7 +100,9 @@
   margin-top: 2%;
   margin-left: 2%;
   margin-right: 2%;
-  color: white;
+  color: #f0ebd8;
+  font-family: "Fredericka the Great";
+  font-size: 1.75rem;
 }
 
 #save-edits {
@@ -122,4 +124,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
+}
+
+.bev-id-top-form-edit {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+}
+
+input#description.bev-card-edit-item.space-me {
+  width: 75%;
 }

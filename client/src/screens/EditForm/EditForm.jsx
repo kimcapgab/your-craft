@@ -59,7 +59,7 @@ export default function EditForm({ setToggle }) {
             )}
             <div id="image-preview">
               <p>
-                URL for Image of Beverage (Transparent Backgrounds Work Best){" "}
+                URL for Image of Beverage (Vertical Images with Transparent Backgrounds Work Best){" "}
               </p>
               <input
                 className="left-container-edit-item"
@@ -91,7 +91,11 @@ export default function EditForm({ setToggle }) {
                 value={bev.title}
                 name="title"
                 onChange={handleChange}
-              />
+            />
+            
+            <div className="bev-id-top-form-edit">
+            <div className='bottom-right-input'>
+            <h3>Style:</h3>
               <input
                 className="bev-card-edit-item space-me"
                 id="right-style"
@@ -100,6 +104,9 @@ export default function EditForm({ setToggle }) {
                 name="style"
                 onChange={handleChange}
               />
+            </div>
+            <div className='bottom-right-input-des'>
+            <h3>Description:</h3>
               <input
                 className="bev-card-edit-item space-me"
                 id="description"
@@ -108,7 +115,9 @@ export default function EditForm({ setToggle }) {
                 value={bev.description}
                 name="description"
                 onChange={handleChange}
-              />
+                  />
+              </div>
+              </div>
               <h2>Characteristics</h2>
             </div>
             <div id="bottom-bev-edit-card">
