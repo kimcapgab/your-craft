@@ -24,13 +24,15 @@ function About() {
             <div className='ron-links-container'>
               <div className="linkRon">
             <a href='http://www.linkedin.com/in/kim-capilla-gabbert'
-              target='_blank'>
+                  target='_blank'
+                  rel="noreferrer">
               LinkedIn
               </a>
               </div>
               <div className="linkRon">
             <a href='https://github.com/kimcapgab'
-              target='_blank'>
+                  target='_blank'
+                  rel="noreferrer">
               GitHub
                 </a>
                 </div>
@@ -43,18 +45,19 @@ function About() {
           </div>
           <div className='us-content'>
             <h1>Ron Garofalo</h1>
-            <h2>Is he too handsome? Maybe. </h2>
             <div className='ron-links-container'>
               <div className="linkRon">
             <a href='https://www.linkedin.com/in/ron-garo/'
-              target='_blank'>
+                  target='_blank'
+                  rel="noreferrer">
                 LinkedIn
               
                 </a>
                 </div>
           <div className="linkRon">
             <a href='https://github.com/Garofalo'
-              target='_blank'>
+                  target='_blank'
+                  rel="noreferrer">
               GitHub
               </a>
               </div>
@@ -74,13 +77,15 @@ function About() {
             <div className='ron-links-container'>
               <div className="linkRon">
             <a href='https://www.linkedin.com/in/jeshaiah-miller-a5ba10221/'
-              target='_blank'>
+                  target='_blank'
+                  rel="noreferrer">
               LinkedIn
                 </a>
               </div>
               <div className="linkRon">
             <a href='https://github.com/jeshaiahmiller'
-              target='_blank'>
+                  target='_blank'
+                  rel="noreferrer">
               GitHub
                 </a>
                 </div>

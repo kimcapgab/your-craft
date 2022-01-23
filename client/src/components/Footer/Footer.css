@@ -2,12 +2,13 @@
 
 footer {
   background-image: url("https://blessedbythelord.org/wp-content/uploads/2021/07/0e3863867_1416877594_wooden-header.jpg");
-  height: 20vh;
+  height: 24vh;
   display: flex;
   justify-content: center;
   font-size: 2em;
   font-family: "Fredericka the Great";
   bottom: 0;
+  padding: 10%;
 }
 
 #left-container {
@@ -60,6 +61,7 @@ footer {
 }
 .sign-out:hover {
   color: #7db6e9;
+  cursor: pointer;
 }
 #footer-vl {
   height: 6em;

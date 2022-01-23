@@ -7,8 +7,8 @@ import BevGallery from './screens/BevGallery/BevGallery'
 import BevID from './screens/BevID/BevID'
 import CreateForm from './screens/CreateForm/CreateForm'
 import { useEffect, useState } from 'react';
-import {verifyUser, getUsers} from './services/userApi'
-import { Routes, Route, Navigate } from 'react-router-dom';
+import {verifyUser} from './services/userApi'
+import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout'
 import About from './screens/About/About';
 import 'bootstrap/dist/css/bootstrap.min.css'
