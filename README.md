@@ -6,7 +6,7 @@ Your Craft
 
 ## Project Description
 
-This web-app will utilize React, Node.js, and MongoDB to display an inventory of craft beer and wines. It will also allow small businesses to add their products as well as a link to their website, as well as show details about the beverage.
+This web-app will utilize React, Node.js, Express, Mongoose and MongoDB to display an inventory of craft beer, wines and liquors. It will also allow small businesses to add their products, a link to their website, as well as show details about the beverage.
 
 ## Wireframes
 
