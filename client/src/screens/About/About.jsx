@@ -26,6 +26,7 @@ function About() {
             <a href='http://www.linkedin.com/in/kim-capilla-gabbert'
                   target='_blank'
                   rel="noreferrer">
+
               LinkedIn
               </a>
               </div>
@@ -33,6 +34,7 @@ function About() {
             <a href='https://github.com/kimcapgab'
                   target='_blank'
                   rel="noreferrer">
+
               GitHub
                 </a>
                 </div>
@@ -50,6 +52,7 @@ function About() {
             <a href='https://www.linkedin.com/in/ron-garo/'
                   target='_blank'
                   rel="noreferrer">
+
                 LinkedIn
               
                 </a>
@@ -58,6 +61,7 @@ function About() {
             <a href='https://github.com/Garofalo'
                   target='_blank'
                   rel="noreferrer">
+
               GitHub
               </a>
               </div>
@@ -79,6 +83,7 @@ function About() {
             <a href='https://www.linkedin.com/in/jeshaiah-miller-a5ba10221/'
                   target='_blank'
                   rel="noreferrer">
+
               LinkedIn
                 </a>
               </div>
@@ -86,6 +91,7 @@ function About() {
             <a href='https://github.com/jeshaiahmiller'
                   target='_blank'
                   rel="noreferrer">
+
               GitHub
                 </a>
                 </div>
